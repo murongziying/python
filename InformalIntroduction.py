@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 # 第一行指定python解释器
 # 这个是注释
-print("test")
 print("Use Python as a calculator")
 print("Number")
 print("加减乘除取余运算")
