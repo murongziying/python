@@ -1,17 +1,9 @@
 #! /usr/bin/python3
-x = int(input("Please enter an integer:"))		# 从键盘获取一个整数，且弹出提示信息
-# 从键盘获取一个整数数据类型数值，如果输入非整数会提示报错信息：ValueError: invalid literal for int() with base 10: 'i'
-if x < 0:										# 如果输入的X小于0,那么将0赋值给x。
-    x = 0										# 将零赋值给x
-    print("Negative changed to zero")			# 负数变为零
-elif x == 0:									# 否则如果x=0
-    print("Zero")								# 那么就打印“Zero”
-elif x == 1:									# 否则如果x=1
-    print("One")								# 那么则打印“One”
-else:											# 否则
-	print("More")								# 打印“more”
-print("'此if函数说明'\'x<0\'打印\'Negative changed to zero\',\'x=0\'打印\'Zero\',\'x=1\'打印\'One\',\'x>1\'打印\'More\'")
-print("============Demarcation line============")
+a = 9
+if a > 0:
+    print("这是个正整数")
+else: 
+    print("这不是整数")
 # Measure some strings
 # 计算words列表中每个字符串的字符长度
 words = ['cat','window','defenestrate']
