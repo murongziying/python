@@ -10,6 +10,10 @@ print('计算每个字符串长度')
 words = ['cat','window','defenestrate']
 for w in words:
     print(w,len(w))
+print("给字符排序")
+a = ['Mary','had','a','little','lamb']
+for i in range(len(a)):
+    print(i,a[i])
 print("在第0个位置插入字符串大于6的字符")
 for w in words[:]:  #Loop over a slice copy of the entire list.
     if len(w) > 6:
