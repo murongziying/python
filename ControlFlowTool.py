@@ -6,31 +6,28 @@ else:
     print("这不是整数")
 # Measure some strings
 # 计算words列表中每个字符串的字符长度
+print('计算每个字符串长度')
 words = ['cat','window','defenestrate']
 for w in words:
     print(w,len(w))
-print("============Demarcation line============")
+print("在第0个位置插入字符串大于6的字符")
 for w in words[:]:  #Loop over a slice copy of the entire list.
     if len(w) > 6:
         words.insert(0,w)
         print(words)
-print("============Demarcation line============")
+print("1到5的链表")
 for i in range(5):
     print(i)
-    print("长度为5的链表")
-print("============Demarcation line============")
+print("5到9的链表")
 for j in range(5,10):
     print(j)
-    print("长度为10的链表中截取从5开始的这段长度的数值")
-print("============Demarcation line============")
+print("长度为10的链表中截取从0开始的这段长度的数值并以3为等差间距")
 for x in range(0,10,3):
     print(x)
-    print("长度为10的链表中截取从0开始的这段长度的数值并以3为等差间距")
-print("============Demarcation line============")
+print("长度为-100的数值中，从-10到-100中以-30为间距截取相应数值")
 for y in range(-10,-100,-30):
     print(y)
-    print("长度为-100的数值中，从-10到-100中以-30为间距截取相应数值")
-print("============Demarcation line============")
+print("计算每个字符串的字符长度")
 a = ['Mary','had','a','little','lamb']
 for i in range(len(a)):
     print(i,a[i])

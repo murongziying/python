@@ -1,0 +1,67 @@
+Python
+
+2018.5.10
+
+list方法
+list.append(x)
+在列表的末尾追加一个元素
+list.extend(L)
+在列表的末尾追加一组元素
+list.insert(i,x)
+在第i个元素之前插入元素x
+list.remove(x)
+删除列表中第一个x元素
+list.pop(i)
+移除给定位置i的元素，并返回剩余的值，如果给定位置为空则移除最后一个元素并返回
+list.clear()
+移除列表中的所有元素
+list.index(x)
+返回列表中第一个元素为x的元素
+list.count(x)
+统计列表中x的数量
+list.sort()
+对列表按从小到大排序
+list.reverse()
+对列表进行翻转，首尾对掉
+list.copy()
+对列表进行复制
+
+2018.5.12
+
+VScode中配置pylint报错提示
+在设置中添加如下设置
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintPath": "/usr/bin/pylint",
+}
+查看pylint路径命令
+dpkg -L pylint
+
+
+2018.5.16
+
+git 使用
+git init
+初始化仓储
+git status
+状态查看
+git add
+追踪文件            
+git diff
+比较两次修改的差异
+git commit -m "提交说明"      
+提交代码并填写本次提交说明
+vi id_rsa.pub			
+在id_rsa.pub中添加key
+git clone git@github.com:murongziying/python.git
+克隆仓储
+git remote add origin git@github.com:murongziying/python.git
+添加远程仓储
+git remote -v
+查看所有已经连接的远程代码库
+git push origin master
+提交到远程代码库
+
+
+
+
