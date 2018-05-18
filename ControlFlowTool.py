@@ -36,9 +36,9 @@ a = ['Mary','had','a','little','lamb']
 for i in range(len(a)):
     print(i,a[i])
 #将a列表用链表的形式展现出来
-print("============Demarcation line============")
+print("判断一个数是否是质数")
 for n in range(2,10):       #n=[2,3,4,5,6,7,8,9]
-    for x in range(2,n):    #
+    for x in range(2,n):    #x=[null,2,2,3,2,3,4,2,3,4,5,2,3,4,5,6,2,3,4,5,6,7,2,3,4,5,6,7,8]
         if n % x == 0:
             print(n,'equals',x,'*',n//x)
             break
