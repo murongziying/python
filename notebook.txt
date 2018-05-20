@@ -242,4 +242,57 @@ and bname=’数据库应用技术’ and quantity>50
 
 
 
+🔶2018.5.20
+连接数据库
+mysql -h 127.0.0.1 -u root -p
+enter passwd:
+
+创建数据库
+create database test;
+
+查看数据库
+show databases;
+
+选择数据库
+use test;
+
+创建表
+myslq> create table student(
+	-> student_id INT NOT AUTO_INCREMENT,
+	-> student_name VARCHAR(100) NOT NULL,
+	-> student_age INT(10) NOT NULL,
+	-> submssion_data DATE,
+	-> PRIMARY KEY ( student_id )
+	-> )ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+查看表
+show tables;
+
+查看数据表属性
+desc student; == show columns from student;
+
+插入数据
+myslq> insert into student
+	-> (student_name,student_age,submission_data)
+	-> values
+	-> ("liuchao", "25", NOW());
+
+读取数据表数据
+select * from student;
+
+显示索引信息
+show index from student;
+
+显示数据库中所有表信息
+show table status from test;
+
+显示表名以student开头的信息
+show table status from test like 'student';
+
+显示表名以student开头的信息按列打印
+show table status from test like 'student'\G;
+
+
+
+
 
