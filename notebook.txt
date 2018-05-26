@@ -292,4 +292,34 @@ show table status from test like 'student';
 显示表名以student开头的信息按列打印
 show table status from test like 'student'\G;
 
+🔶2018.5.26
+计算算术平方根：
+
+import cmath
+# 方法一
+num = float(input("please tall me you want number:"))
+num_sqrt = num ** 0.5
+print("the number {0:0.5f} square root is: {1:0.5f} ".format(num, num_sqrt))
+当格式化字符{0:0.5f}中存在小数点后精确数值要求时，如果输入负数如[-4]会产生以下错误：
+please tall me you want number:-4
+Traceback (most recent call last):
+  File "./squareroot.py", line 9, in <module>
+    print("the number {0:0.5f} square root is: {1:0.5f} ".format(num, num_sqrt))
+ValueError: Zero padding is not allowed in complex format specifier
+# 方法二
+a = float(input('please input number a:'))
+b = a ** 0.5
+print("a aquare root is: %f"%b)
+只用此方法无法计算负数的平方根，因为无法将a ** 0.5转化为float类型
+please input number a:-4
+Traceback (most recent call last):
+  File "./squareroot.py", line 13, in <module>
+    print("a aquare root is: %f"%b)
+TypeError: can't convert complex to float
+
+# 方法三
+num = int(input("please input a number:"))
+num_sqrt = cmath.sqrt(num)
+print(" {0} 的平方根是 {1:0.3f}+{2:0.3f}j".format(num, num_sqrt.real,num_sqrt.imag))
+
 
