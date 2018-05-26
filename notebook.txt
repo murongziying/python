@@ -293,6 +293,3 @@ show table status from test like 'student';
 show table status from test like 'student'\G;
 
 
-
-
-
