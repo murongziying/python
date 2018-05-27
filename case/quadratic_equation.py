@@ -3,6 +3,7 @@
 # date:2018.5.26
 # application:quadratic equation
 import cmath
+import math
 a = float(input("please input a number:"))
 b = float(input("please input b number:"))
 c = float(input("please input c number:"))
@@ -24,13 +25,15 @@ A = float(input('please input real number A:'))
 B = float(input('please input real number B:'))
 C = float(input('please input real number C:'))
 D = (B ** 2) - (4 * A * C )
-sol1 = (-B + cmath.sqrt(D)) / (2 * A)
-sol2 = (-B - cmath.sqrt(D)) / (2 * A)
 if D < 0:
     print("no real number solution")
 elif D == 0:
+    sol1 = (-B + math.sqrt(D)) / (2 * A)
+    sol2 = (-B - math.sqrt(D)) / (2 * A)
     print("have two squal real number solution")
     print("sol1 = {0}, sol2 = {1}".format(sol1, sol2))
 else:
+    sol1 = (-B + math.sqrt(D)) / (2 * A)
+    sol2 = (-B - math.sqrt(D)) / (2 * A)
     print("have two not squal real number solution")
     print("sol1 = {0}, sol2 = {1}".format(sol1, sol2))
