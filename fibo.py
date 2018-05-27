@@ -1,7 +1,7 @@
 #! /usr/bin/python3
 # Fibonacci numbers modules
 
-def fib(n):     # write Fibonacci series up to n
+def fib(n):     # return Fibonacci series up to n
     a, b = 0, 1
     while b < n:
         print(b, end=' ')
