@@ -1,8 +1,6 @@
 #! /usr/bin/python3
-import math
-a = float(input("please input number a:"))
-b = float(input("please input number b:"))
-c = float(input("please input number c:"))
-s = (a + b + c) / 2
-area = math.sqrt(s * (s - a) * (s - b) * (s -c))
-print("this triangle area is: %f"%area)
+year = int(input("please input a integer: "))
+if (year % 4) == 0 and (year % 100 != 0) or (year % 400 == 0):
+    print("This is a leap year!")
+else:
+    print("It's not a leap year!")
