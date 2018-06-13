@@ -25,6 +25,7 @@ m1.update(sign.encode(encoding='utf-8'))
 sign = m1.hexdigest()
 myurl = myurl + '?appid=' + appid + '&q=' + q + '&from=' + fromLang + '&to=' + toLang + '&salt=' + str(
     salt) + '&sign=' + sign
+print(myurl)
 
 try:
     httpClient = http.client.HTTPConnection('api.fanyi.baidu.com')
