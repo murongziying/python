@@ -1,4 +1,4 @@
-#! /usr/bin/python3
+#! /usr/bin/env python3
 x = int(input("请输入一个整数："))		           # Please enter an integer:
 # 从键盘获取一个整数，且弹出提示信息
 # 从键盘获取一个整数数据类型数值，如果输入非整数会提示报错信息：ValueError: invalid literal for int() with base 10: 'i'
@@ -10,4 +10,4 @@ elif x == 0:									# 否则如果x=0
 elif x == 1:									# 否则如果x=1
     print("One")								# 那么则打印“One”
 else:											# 否则
-	print("这是一个大于1的整数")								# 打印“more”
+	print("这是一个大于1的整数")					# 打印“more”

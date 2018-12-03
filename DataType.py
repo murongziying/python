@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 counter = 99		#整型
 mites = 3.14		#浮点型

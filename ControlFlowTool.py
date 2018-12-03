@@ -1,4 +1,4 @@
-#! /usr/bin/python3
+#! /usr/bin/env python3
 a = 9
 if a > 0:
     print("这是个正整数")

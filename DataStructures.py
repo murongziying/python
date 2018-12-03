@@ -1,4 +1,4 @@
-#! /usr/bin/python3
+#! /usr/bin/env python3
 a = ['wo','ai','tangrenli']
 print(a)
 a.append('1314')

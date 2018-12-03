@@ -1,4 +1,4 @@
-#! /usr/bin/python3
+#! /usr/bin/env python3
 # Fibonacci numbers modules
 
 def fib(n):     # return Fibonacci series up to n

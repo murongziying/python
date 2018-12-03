@@ -1,4 +1,4 @@
-#! /usr/bin/python3
+#! /usr/bin/env python3
 sound/                      # Top-level package
     __init__.py             Initialize the sound package
     formats/                Subpackage for file format conversions

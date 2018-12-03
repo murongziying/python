@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 # 第一行指定python解释器
 # 这个是注释
 print("Use Python as a calculator")
@@ -17,6 +17,7 @@ print(10**2)				# 10的平方/10 squared
 width = 10					# 宽度/width
 height = 4*5				# 高度/height
 area=width*height			# 面积/area
+print("")
 print("width=%d,height=%d,area=%d"%(width,height,area))
 print("this is a %s,round rate %f,round area is %d"%("round",3.14159,9))
 tax = 12.5/100

@@ -1,4 +1,4 @@
-#! /usr/bin/python3         
+#! /usr/bin/env python3         
 # 这一行一定不能忘记，不然运行容易出错，因为./找不到命令解释器
 words = ['I','love','you']
 print(words)
