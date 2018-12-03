@@ -1,16 +1,16 @@
 #! /usr/bin/env python3
-a = ['wo','ai','tangrenli']
+a = ['wo', 'ai', 'tangrenli']
 print(a)
 a.append('1314')
 print(a)
 # list.append(x)
 # 在列表的末尾插入元素x，等同于a[len(a):] = [x]
-L = ['520','1314']
+L = ['520', '1314']
 a.extend(L)
 print(a)
 # list.extend(L)
 # 将L中的全部元素插入到列表的末尾，以扩展该列表，等同于a[len(a):] = L
-a.insert(4,'tangrenli')
+a.insert(4, 'tangrenli')
 print(a)
 # list.insert(i,x)
 # 将一个元素插入到指定位置。第一个参数是待插入的元素的前一个元素的位置，所以a,insert(0,x)在列表的最前边插入，而a,insert(len(a),x)等同于a.append(x)
@@ -28,7 +28,7 @@ a.clear()
 print(a)
 # list.clear()
 # 从列表中移除所有元素，等同于del a[:]
-b = ['ubuntu','suse','redhat','centos']
+b = ['ubuntu', 'suse', 'redhat', 'centos']
 num1 = b.index('redhat')
 print(num1)
 # list.index(x)
@@ -51,9 +51,9 @@ print(b)
 # 返回该列表的一个浅拷贝，等同于a[:]
 
 print('列表方法综合使用')
-c = [55.67,555,8,5345.7,555]
-print(c.count(555),c.count(55.67),c.count('ubuntu'))
-c.insert(3,-20)
+c = [55.67, 555, 8, 5345.7, 555]
+print(c.count(555), c.count(55.67), c.count('ubuntu'))
+c.insert(3, -20)
 print(c)
 c.append(555)
 print(c)
@@ -68,23 +68,24 @@ print(c)
 c.pop(2)
 print(c)
 print('将列表作为栈来使用')
-stack = [3,4,5]
-stack.append(6)     # 追加6
-stack.append(7)     # 追加7
+stack = [3, 4, 5]
+stack.append(6)  # 追加6
+stack.append(7)  # 追加7
 print(stack)
-stack.pop()         # 取出7
+stack.pop()  # 取出7
 print(stack)
-stack.pop()         # 取出6
+stack.pop()  # 取出6
 print(stack)
-stack.pop()         # 取出5
+stack.pop()  # 取出5
 print(stack)
-stack.pop()         # 取出4
+stack.pop()  # 取出4
 print(stack)
-stack.pop()         # 取出3
+stack.pop()  # 取出3
 print(stack)
 print('将列表作为队列来使用')
 from collections import deque
-queue = deque(["Eric","John","Michael"])
+
+queue = deque(["Eric", "John", "Michael"])
 queue.append("Terry")
 queue.append("Graham")
 print(queue)
@@ -95,28 +96,28 @@ print(queue)
 print("列表推导式")
 squares = []
 for x in range(10):
-    squares.append(x**2)
+    squares.append(x ** 2)
 
 print(squares)
 """
 这里会创建一个x变量，并且这个变量会在循环结束后任然存在,所以可以考虑用其他的方式创建平方数列表
 """
-squares = list(map(lambda x: x**2,range(10)))
+squares = list(map(lambda x: x ** 2, range(10)))
 print(squares)
-squares = [x**2 for x in range(10)]
+squares = [x ** 2 for x in range(10)]
 print(squares)
-print([(x,y) for x in [1,2,3] for y in [3,1,4] if x !=y])
+print([(x, y) for x in [1, 2, 3] for y in [3, 1, 4] if x != y])
 combs = []
-for x in [1,2,3]:
-    for y in [3,1,4]:
+for x in [1, 2, 3]:
+    for y in [3, 1, 4]:
         if x != y:
-            combs.append((x,y))
+            combs.append((x, y))
 
 print(combs)
-vec = [-4,-2,0,2,4]
+vec = [-4, -2, 0, 2, 4]
 print(vec)
 # create a new list with the values doubled
-[x*2 for x in vec]
+[x * 2 for x in vec]
 print(vec)
 # filter the list to exclude negative numbers
 [x for x in vec if x >= 0]
@@ -125,21 +126,22 @@ print(vec)
 [abs(x) for x in vec]
 print(vec)
 # call a method on each element
-freshfruit = [' banana',' loganberry','passion fruit ']
+freshfruit = [' banana', ' loganberry', 'passion fruit ']
 [weapon.strip() for weapon in freshfruit]
 print(freshfruit)
 # create a list of 2-tuples like (number,square)
-print([(x,x**2) for x in range(6)])
+print([(x, x ** 2) for x in range(6)])
 # flatten a list using a listcomp with two 'for'
-vec = [[1,2,3],[4,5,6],[7,8,9]]
+vec = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print([num for elem in vec for num in elem])
 from math import pi
-print([str(round(pi, i)) for i in range(1,6)])
+
+print([str(round(pi, i)) for i in range(1, 6)])
 print("嵌套列表推导式")
 matrix = [
-        [1,2,3,4],
-        [5,6,7,8],
-        [9,10,11,12],
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12],
 
 ]
 print([[row[i] for row in matrix] for i in range(4)])
@@ -159,7 +161,7 @@ for i in range(4):
 print(transposed)
 print(list(zip(*matrix)))
 print("del语句")
-a = [-1,1,66,25,333,333,1234.5]
+a = [-1, 1, 66, 25, 333, 333, 1234.5]
 print(a)
 del a[0]
 print(a)
@@ -180,25 +182,25 @@ print(u)
 v = ([1, 2, 3], [3, 2, 1])
 print(v)
 empty = ()
-singleton = 'hello',    # <-- note trailing comma
+singleton = 'hello',  # <-- note trailing comma
 print(len(empty))
 print(len(singleton))
 print(singleton)
 print("集合")
-basket = {'apple', 'orange','apple','pear','orange','banana'}
-print(basket)           # show that duplicates have been removed
+basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+print(basket)  # show that duplicates have been removed
 print('orange' in basket)
 print('carbgrass' in basket)
 # Demonstrate set operations on unique letters from two words
 a = set('abracadabra')
 b = set('alacazam')
-print(a)                # unique letters in a
-print(a - b)            # letters in a but not in b
-print(a | b)            # letters in either a or b
-print(a & b)            # letters in both a and b
-print(a ^ b)            # letters in a or b but not both
+print(a)  # unique letters in a
+print(a - b)  # letters in a but not in b
+print(a | b)  # letters in either a or b
+print(a & b)  # letters in both a and b
+print(a ^ b)  # letters in a or b but not both
 print('字典')
-tel = {'jack' : 4098,'sape' : 4139}
+tel = {'jack': 4098, 'sape': 4139}
 tel['guido'] = 4127
 print(tel)
 print(tel['jack'])
@@ -209,8 +211,8 @@ print(list(tel.keys()))
 print(sorted(tel.keys()))
 print('guido' in tel)
 print('jack' not in tel)
-print(dict([('sape', 4139), ('guido', 4127),('jack', 4098)]))
-print({x: x**2 for x in (2, 4, 6)})
+print(dict([('sape', 4139), ('guido', 4127), ('jack', 4098)]))
+print({x: x ** 2 for x in (2, 4, 6)})
 print(dict(sape=4139, guido=4127, jack=4098))
 print("遍历的技巧")
 knights = {'gallahad': 'the pure', 'robin': 'the brave'}
