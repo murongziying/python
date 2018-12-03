@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # 第一行指定python解释器
 # 这个是注释
-print("Use Python as a calculator")
-print("Number")
+print("================")
+print("用Python作为计算器")
 print("加减乘除取余运算")
 print(2 + 2)  # 加法运算/addition operator
 print(89 - 3 * 5)
@@ -17,14 +17,14 @@ print(10 ** 2)  # 10的平方/10 squared
 width = 10  # 宽度/width
 height = 4 * 5  # 高度/height
 area = width * height  # 面积/area
-print("")
 print("width=%d,height=%d,area=%d" % (width, height, area))
 print("this is a %s,round rate %f,round area is %d" % ("round", 3.14159, 9))
 tax = 12.5 / 100
 price = 100.50
 amount = price * tax
 print("amount=%d" % amount)
-print("单双引号使用转义字符")
+
+print("=======单双引号使用转义字符=======")
 print("Strings")
 print('"doesn\'t"')  # 单引号和双引号不能同时使用
 print('doesn\'t')  # 单引号中使用单引号需要将想要显示出来的单引号进行转义
@@ -39,19 +39,19 @@ print(r'C:\some\name')  # \n转义字符前面加'r'可以取消转义效果
 
 print("""
 Usage:thingy [OPTIONS]
-	-h
-	-H hostname
+-h
+-H hostname
 """)
-print(3 * 'Ubuntu' + '1804')  # 字符串可以进行加减乘运算
-print('Ubuntu''Linux')
+print(3 * 'Ubuntu ' + '1804')  # 字符串可以进行加减乘运算
+print('Ubuntu'+' Linux')
 prefix = 'java'
 prefix = 'python'  # 赋值，同一个变量，后面一个赋值会替换前一个值
-print(prefix + 'mangodb')  # 变量和常量之间需要用+连接
+print(prefix + ' chrome')  # 变量和常量之间需要用+连接
 text = ('Put several strings within parentheses'
         'to have them joined together.')
 print(text)  # 文本字符串
 
-print("字符切片运算")
+print("=======字符切片运算=======")
 word = 'Python'
 print('word=', word)
 print('word[0]=', word[0])  # 字符串第一个字符
@@ -85,7 +85,7 @@ s = 'linux       ubuntu'
 print(len(s))  # 用来计算s字符串中字符个数包含空格
 # 结果s等于18
 
-print("列表")
+print("=========列表========")
 
 squares = [1, 4, 9, 16, 25]
 print('squares=', squares)
